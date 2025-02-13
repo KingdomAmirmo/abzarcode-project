@@ -1,0 +1,116 @@
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-track {
+    width: .8rem
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 100rem;
+    background-color: #ddd
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    cursor: pointer
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: fontMedium;
+    src: url(../font/Arad-MediumDots2.woff2);
+}
+
+@font-face {
+    font-family: fontRegular;
+    src: url(../font/Arad-RegularDots2.woff2);
+}
+
+@font-face {
+    font-family: fontSemibold;
+    src: url(../font/Arad-SemiBoldDots2.woff2);
+}
+
+:root {
+    --light-green: #c2ffbd;
+    --light-purple: #ab9aff;
+    --purple: #7f56d9;
+    --gray: #64748B;
+    --black: #111111;
+    --milky: #F3F3F3;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fontMedium;
+    font-feature-settings: "ss01" !important;
+} */
+
+header {
+    background: var(--white);
+    position: sticky !important;
+    top: 0;
+    right: 0;
+}
+
+.offcanvas-link {
+    width: 300px;
+}
+
+.offcanvas-link .nav-link {
+    color: var(--black);
+    transition: color 0.2s ease;
+}
+
+.offcanvas-link .nav-link:hover {
+    color: var(--light-purple);
+}
+
+.btn-register {
+    padding: 7px 15px;
+    color: var(--light-purple);
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.offcanvas-backdrop {
+    backdrop-filter: blur(15px);
+}
+
+.btn-close {
+    box-shadow: none;
+}
+
+@media (min-width : 768px) {}
+
+@media (min-width : 992px) {
+    header {
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    }
+
+    .offcanvas-link {
+        width: 100%;
+        position: relative;
+        visibility: visible;
+        border: none;
+        transform: none;
+    }
+
+    .btn-register {
+        border: 2px solid var(--light-purple);
+    }
+
+    .btn-register:hover {
+        color: var(--white);
+        border: none;
+        background: var(--light-purple);
+        transition: all .2s ease;
+    }
+}

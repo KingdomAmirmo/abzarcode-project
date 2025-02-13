@@ -1,0 +1,160 @@
+
+/* main */
+main {
+    margin-right: 0;
+    padding: 15px;
+}
+
+.items-container {
+    background: var(--white);
+    border-radius: 26px;
+}
+
+.arc-title h4 {
+    font-weight: bold;
+}
+
+.arc-title {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 1.5rem;
+}
+
+.arc-user-infos label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.arc-user-infos input {
+    border-radius: 12px;
+    height: 50px;
+    background: #F3F3F3;
+    border: none;
+}
+
+.arc-user-infos input:focus {
+    background: #F3F3F3;
+}
+
+.arc-user-infos input:disabled {
+    background-color: #D8D8D8;
+}
+
+.btn-submit-order {
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background: var(--light-purple);
+    color: var(--white);
+    padding: 10px 30px;
+    border-radius: 12px;
+    width: 100%;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.btn-submit-order:hover {
+    background: var(--purple);
+}
+
+.arc-user-infos form select {
+    display: block;
+    width: 100%;
+    padding: 0 2rem;
+    border-radius: 12px;
+    height: 50px;
+    border: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") !important;
+    background-position: left .75rem center !important;
+    background-size: 16px 12px !important;
+    background-repeat: no-repeat !important;
+    background: #F3F3F3;
+}
+
+.arc-user-infos form select:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.arc-user-infos form input[type="radio"] {
+    height: 1em;
+    border: 1px solid var(--purple);
+}
+
+.arc-user-infos form input[type="radio"]:focus,
+.arc-user-infos form input[type="radio"]:checked {
+    background: var(--white);
+    background-image: url("../../images/Ellipse\ 422.png");
+    background-position: center;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+
+}
+
+.arc-user-infos form textarea {
+    border-radius: 12px;
+    background: #F3F3F3;
+    border: 2px solid #D8D8D8;
+}
+.contact{
+    margin: 10px 0;
+}
+.contact > :first-child {
+    text-decoration: none;
+    color: var(--black);
+}
+/* templates */
+.teplates img {
+    width: 130px;
+    border-radius: 12px;
+}
+
+.teplates a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.teplates p {
+    font-size: 12px;
+}
+
+/* templates */
+/* main */
+/* sidebar */
+.active-link svg path {
+    stroke: var(--light-purple) !important;
+}
+
+.active-link svg circle {
+    stroke: var(--light-purple) !important;
+}
+
+.active-link span {
+    color: var(--light-purple) !important;
+}
+
+/* sidebar */
+
+/* media */
+@media (min-width: 1200px) {
+    main {
+        margin-right: 370px !important;
+    }
+}
+
+@media (min-width: 991px) {
+
+}
+
+@media (min-width: 768px) {
+    main {
+        margin-right: 120px;
+        padding: 15px 0 15px 15px;
+    }
+
+}
+
+@media (min-width: 576px) {}
+
+/* media */

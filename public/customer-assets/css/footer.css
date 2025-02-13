@@ -1,0 +1,106 @@
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-track {
+    width: .8rem
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 100rem;
+    background-color: #ddd
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    cursor: pointer
+}
+/* @font-face {
+    font-family: fontMedium;
+    src: url(../font/Arad-MediumDots2.woff2);
+}
+
+@font-face {
+    font-family: fontRegular;
+    src: url(../font/Arad-RegularDots2.woff2);
+}
+
+@font-face {
+    font-family: fontSemibold;
+    src: url(../font/Arad-SemiBoldDots2.woff2);
+}
+
+:root {
+    --light-green: #c2ffbd;
+    --light-purple: #ab9aff;
+    --purple: #7f56d9;
+    --gray: #64748B;
+    --black: #111111;
+    --milky: #F3F3F3;
+    --white: #FFFFFF;
+    --yellow: #FBC02D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fontMedium;
+    font-feature-settings: "ss01" !important;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: fontMedium;
+} */
+
+footer {
+    width: 100%;
+    background: #1b1b1b;
+    color: var(--white);
+}
+
+.arc-logo-footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.arc-location {
+    margin-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid var(--gray);
+}
+
+.arc-location span {
+    font-size: 13px;
+}
+
+.container-icon {
+    padding: 7px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.158);
+}
+
+@media (min-width : 576px) {}
+
+@media (min-width : 768px) {
+    .arc-logo-footer {
+        width: 50%;
+    }
+
+    .arc-location {
+        width: 70%;
+    }
+}
+
+@media (min-width : 992px) {
+    .arc-logo-footer {
+        width: 30%;
+    }
+
+    .arc-location {
+        width: 50%;
+    }
+}

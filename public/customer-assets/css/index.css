@@ -1,0 +1,443 @@
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-track {
+    width: .8rem
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 100rem;
+    background-color: #ddd
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    cursor: pointer
+}
+
+@font-face {
+    font-family: fontMedium;
+    src: url(../font/Arad-MediumDots2.woff2);
+}
+
+@font-face {
+    font-family: fontRegular;
+    src: url(../font/Arad-RegularDots2.woff2);
+}
+
+@font-face {
+    font-family: fontSemibold;
+    src: url(../font/Arad-SemiBoldDots2.woff2);
+}
+
+:root {
+    --light-green: #c2ffbd;
+    --light-purple: #ab9aff;
+    --purple: #7f56d9;
+    --gray: #64748B;
+    --black: #111111;
+    --milky: #F3F3F3;
+    --white: #FFFFFF;
+    --yellow: #FBC02D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fontMedium;
+    font-feature-settings: "ss01" !important;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: fontMedium;
+}
+
+.btn-changed {
+    border: 1px solid var(--light-purple);
+    border-radius: 30px;
+}
+
+.btn-show-demo {
+    color: var(--white);
+    text-decoration: none;
+    background: var(--light-purple);
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-show-demo:hover {
+    color: var(--white);
+    background-color: var(--purple);
+}
+
+.btn-show-demo svg {
+    background: var(--light-green);
+    border-radius: 50%;
+}
+
+.section-info {
+    background: var(--black);
+    border-radius: 40px;
+    background-image: url("../../images/pattern.jpg");
+    background-size: 600px;
+}
+
+.div-features {
+    margin-top: 100px;
+}
+
+.btn-aboutus {
+    text-decoration: none;
+    color: var(--white);
+    background: var(--light-purple);
+    padding: 10px 35px;
+    border-radius: 30px;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-aboutus:hover {
+    color: var(--white);
+    background-color: var(--purple);
+}
+
+.card-template {
+    border: none;
+    border-radius: 16px;
+}
+
+.card-template .card-body h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-template .card-body p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.card-template .card-body small {
+    font-size: 11px;
+}
+
+.btn-show-template {
+    border-radius: 13px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-show-template:hover {
+    background-color: var(--purple);
+}
+
+.template-mark {
+    color: var(--yellow);
+}
+
+.user-commnets {
+    border-radius: 16px;
+}
+
+.comment-info {
+    background-color: var(--milky);
+    display: inline-block;
+    padding: 10px 5px 10px 30px;
+    border-start-end-radius: 15px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay-top::before,
+.overlay-top::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 65px;
+    height: 20px;
+    width: 20px;
+    background-color: var(--milky);
+    border: none;
+    transform: rotate(90deg);
+}
+
+.overlay-top::after {
+    border-radius: 0 25px 0 0;
+    background: rgb(248 249 250);
+}
+
+.overlay-bottom::before,
+.overlay-bottom::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--milky);
+    border: none;
+    transform: rotate(90deg);
+}
+
+.overlay-bottom::after {
+    border-radius: 0 25px 0 0;
+    background: rgb(248 249 250);
+}
+
+.comment-info p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.comment-info small {
+    font-size: 11px;
+    font-weight: 200;
+}
+
+.section-articles {
+    background-color: var(--milky);
+}
+
+.background-container {
+    border-radius: 40px;
+    height: 300px;
+    background: var(--black);
+}
+
+.card-article {
+    background-color: #EBE7FF;
+    /*background-color: var(--milky);*/
+    border-radius: 20px;
+}
+
+.card-article img {
+    border-radius: 12px;
+    width: 100%;
+}
+
+.card-article h5 {
+    font-size: 15px;
+}
+
+.card-article p,
+.card-article a {
+    font-size: 13px;
+}
+
+.container-articles {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 100px;
+}
+
+.swiper-pagination span {
+    background: var(--light-purple);
+}
+
+.section-instagram-page {
+    margin-top: 350px;
+}
+
+.section-instagram-page .row {
+    background: url(images/section-pattern.png), linear-gradient(140deg, #6228d7, #ee2a7b, #f9ce34) repeat;
+    border-radius: 20px;
+}
+
+.btn-instagram-page {
+    text-decoration: none;
+    color: var(--white);
+    padding: 5px 15px;
+    background: #ffffff65;
+    border-radius: 12px;
+    position: relative;
+}
+
+@media (min-width : 576px) {
+    .p-info {
+        width: 60%;
+    }
+
+    .background-container {
+        height: 320px;
+    }
+
+    .section-instagram-page {
+        margin-top: 280px;
+    }
+}
+
+@media (min-width : 768px) {
+    .section-info {
+        border-radius: 0px;
+    }
+
+    .background-container {
+        border-radius: 0px;
+    }
+
+    .btn-instagram-page {
+        color: #6228d7;
+        background: var(--white);
+    }
+
+    /*.btn-instagram-page::before {*/
+    /*    content: "";*/
+    /*    position: absolute;*/
+    /*    inset: 0;*/
+    /*    border-radius: 12px;*/
+    /*    border: 3px solid transparent;*/
+    /*    background: linear-gradient(140deg, #6228d7, #ee2a7b, #f9ce34) border-box;*/
+    /*    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);*/
+    /*    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);*/
+    /*    -webkit-mask-composite: destination-out;*/
+    /*    mask-composite: exclude;*/
+    /*}*/
+
+    .background-container {
+        height: 380px;
+    }
+}
+
+
+
+@media (min-width : 992px) {
+    .p-info {
+        width: 40%;
+    }
+
+
+}
+
+.text-light-purple {
+    color: var(--light-purple);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.bg-light-purple {
+    background-color: var(--light-purple);
+}
+
+.bg-milky {
+    background-color: var(--milky);
+}
+
+.btn-border-rounded {
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+/* plan style*/
+.bg-plans-bronze{
+    background: url(../../images/plan/plan-boronzi.png);
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+    border-radius: 20px;
+    padding: 30px 50px;
+}
+.bg-plans-silver{
+    background: url(../../images/plan/plan-silver.png);
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+    border-radius: 20px;
+    padding: 30px 50px;
+}
+.bg-plans-gold{
+    background: url(../../images/plan/plan-gold.png);
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+    border-radius: 20px;
+    padding: 30px 50px;
+}
+.card-plans-bronze {
+    background: transparent;
+    border: 3px solid #ca905e;
+    border-radius: 40px;
+    padding: 30px 0;
+}
+.card-plans-silver {
+    background: transparent;
+    border: 3px solid #C4c4c4;
+    border-radius: 40px;
+    padding: 30px 0;
+}
+.card-plans-gold {
+    background: transparent;
+    border: 3px solid #efbf04;
+    border-radius: 40px;
+    padding: 30px 0;
+}
+
+.card-plans h5 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-plans-bronze h5 span {
+    color: #ca905e;
+}
+.card-plans-silver h5 span {
+    color: #C4c4c4;
+}
+.card-plans-gold h5 span {
+    color: #efbf04;
+}
+
+.card-img-plans {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.card-plans-body p {
+    margin-bottom: 8px;
+}
+
+.card-plans-body span {
+    font-size: 15px;
+}
+
+.card-plans-bronze .card-plans-body svg {
+    stroke: #ca905e;
+}
+.card-plans-silver .card-plans-body svg {
+    stroke: #C4c4c4;
+}
+.card-plans-gold .card-plans-body svg {
+    stroke: #efbf04;
+}
+@media (max-width : 576px) {
+    .bg-plans-bronze{
+        padding: 20px 25px;
+    }
+    .bg-plans-silver{
+        padding: 20px 25px;
+    }
+    .bg-plans-gold{
+        padding: 20px 25px;
+    }
+
+}
